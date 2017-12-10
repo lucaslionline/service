@@ -1,0 +1,17 @@
+body {
+	background: #eee;
+	padding-top: 20px;
+}
+
+.gray {
+	color: gray;
+}
+.center {
+	text-align: center;
+}
+
+footer {
+	color: gray;
+	text-align: center;
+	margin: 10px 0;
+}
