@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+	<div class="container">
+		{% include header.html %}
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<span class="gray">{{ page.date | date_to_string }}</span>
+						<h4>{{ page.title }}</h4>
+						<span>{% include html/post_tags.html %}</span>
+					</div>
+
+					<div class="list-group">
+						<div class="list-group-item">
+							{{ content }}
+						</div>
+
+						<div class="list-group-item">
+							{% include html/pages.html %}
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="well">
+					{% include html/comments.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{% include footer.html %}
+</body>
+</html>

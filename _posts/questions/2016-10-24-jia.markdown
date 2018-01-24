@@ -1,0 +1,15 @@
+---
+layout: question
+title:  "In the Building Code V1.0, values related to wind and snow loads and earthquake-resistant intensity have been crossed out. Would you please give us the correct values for the city of Dezhou?"
+category: questions
+tags:
+- Building Code
+- Team JIA+
+---
+
+Here is the missing information:
+
+- The wind load for Dezhou shall be taken as `0.45kN/m2`, which is the basic wind pressure with the recurrence rate of 50 years (at 10m above the ground, 10-minute average annual maximum wind speed is about `26.86m/s`).
+- When it is predicted that the wind velocity may exceed `26.86m/s`, a notice for forcible withdrawal (evacuation order) will be issued.
+- In Dezhou, the earthquake-resistant fortification intensity is `7`, and the design basic acceleration is `0.10g`.
+- In Dezhou, the snow load shall be `0.35kN/m2`, and the coefficient division of quasi-permanent value for snow load shall be `II`.

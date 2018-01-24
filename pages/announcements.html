@@ -1,0 +1,13 @@
+---
+layout: wide
+title: "Announcements"
+---
+
+<div class="list-group">
+	{% for post in site.categories.announcements %}
+	<a class="list-group-item" href="{{ site.baseurl }}{{ post.url }}">
+		<span class="gray small">[ {{ post.date | date_to_string }} ]</span>
+		{{ post.title }}
+	</a>
+	{% endfor %}
+</div>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<title>SDC 2018 | Q&A</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+	<!-- ================== Mapbox ==================== -->
+	<script src='/assets/js/mapbox-gl.js'></script>
+	<link href='/assets/css/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<img class="navbar-brand" src="/assets/img/sdc_logo.png">
+				<a class="navbar-brand" href="/">Team Service Center</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competition <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/competition/calendar.html">Calendar</a></li>
+							<li><a href="/pages/competition/teams.html">Teams</a></li>
+							<li><a href="/pages/competition/juries.html">Juries</a></li>
+							<li><a href="/pages/competition/contests.html">Contests</a></li>
+							<li><a href="/pages/competition/rules.html">Rules</a></li>
+						</ul>
+					</li>
+
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshop <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
+							<li><a href="/pages/workshop/first.html">Workshop I</a></li>
+						</ul>
+					</li>
+
+
+					<li class=""><a href="/pages/downloads.html">Downloads</a></li>
+
+
+					<li class=""><a href="/pages/deliverables.html">Deliverables</a></li>
+
+					
+					<li class="active"><a href="/pages/questions.html">Q&A</a></li>
+				</ul>
+
+
+				<!--ul class="nav navbar-nav navbar-right">
+					<li><a href="/pages/login.html">Log in</a></li>
+				</ul-->
+			</div>
+		</div>
+	</nav>
+	<!--/.nav-collapse -->
+</header>
+
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="well">
+	<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+
+		<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/service/pages/sent.html' />
+
+		<p>
+			<textarea name="Question" rows="6" class="form-control" placeholder="Submit a question/request..." required></textarea>
+		</p>
+
+		<button type="submit" class="btn btn-sm btn-primary pull-right">Submit</button>
+
+		<p>
+			From: 
+			<select name="Team">
+				<option>- Teams -</option>
+				
+				<option>Team HKU</option>
+				
+				<option>Team PKU</option>
+				
+				<option>Team THU</option>
+				
+				<option>Team XJTU-WNEU</option>
+				
+				<option>Team YI</option>
+				
+				<option>Team NJFJ</option>
+				
+				<option>Team Istanbul</option>
+				
+				<option>Team SUES-XD</option>
+				
+				<option>Team Shunya</option>
+				
+				<option>Team Montreal</option>
+				
+				<option>Team JIA+</option>
+				
+				<option>Team Purdue</option>
+				
+				<option>Team SEU-TUBS</option>
+				
+				<option>Team XAUAT</option>
+				
+				<option>Team SJTUIUC</option>
+				
+				<option>Team BJTU</option>
+				
+				<option>Team SIE</option>
+				
+				<option>Team TJU-TUD</option>
+				
+				<option>Team Solar Offspring</option>
+				
+				<option>Team SCUT-POLITO</option>
+				
+				<option>Team UNNC Alpha</option>
+				
+				<option>Team Israel</option>
+				
+			</select>
+		</p>
+	</form>
+</div>
+
+
+<div class="list-group">
+	
+	<div class="list-group-item">
+		<span class="gray">04 Jul 2017</span>
+		<h4><a href="/questions/2017/07/04/montreal.html">The Deliverables tab states that D-8 is due on March 31, 2018. However, this includes the as-built drawings and specifications. Are we required to submit our as-built drawings before construction in Dezhou commences?</a></h4>
+		<!--p>Yes, you are required to submit your as-built drawings in both D-6 Final Construction Documentation and D-8 Jury Deliverables. D-6 is for Dezhou review and audit. D-8 is for jury review.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Rules">#Rules</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Montreal">#Team Montreal</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">19 Feb 2017</span>
+		<h4><a href="/questions/2017/02/19/israel.html">Is it possible to get an English version of the soil test report?</a></h4>
+		<!--p>Dezhou Architecture Design Institute can only provide Chinese version soil test report.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Site">#Site</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Israel">#Team Israel</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">31 Oct 2016</span>
+		<h4><a href="/questions/2016/10/31/montreal-5.html">Please confirm how greywater and rainwater can be used. There are contradictions between the Solar Decathlon Rules and Building Code.</a></h4>
+		<!--p>The Rules restricted greywater use because in previous SD competitions the houses were built on a parking lot or green lawn temporarily. The houses had closed systems and no greywater was allowed to go on the ground (for protection of the site). However, this time we have connected water systems...</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Rules">#Rules</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Montreal">#Team Montreal</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">31 Oct 2016</span>
+		<h4><a href="/questions/2016/10/31/montreal-4.html">Will water closets be connected to the sewage systems? Can water closets be connected to the principle water supply or must they make use of recycled water?</a></h4>
+		<!--p>Yes, water closets shall be fully functional, and shall be connected to the water supply and sewage systems. It is allowed to connect the water closets to the principle water supply.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Montreal">#Team Montreal</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">31 Oct 2016</span>
+		<h4><a href="/questions/2016/10/31/montreal-3.html">Are indoor fire hose reels or portable fire hoses necessary if fire extinguishers are provided?</a></h4>
+		<!--p>No, you can equip with either one.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Montreal">#Team Montreal</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">31 Oct 2016</span>
+		<h4><a href="/questions/2016/10/31/montreal-2.html">If a house includes both front and rear entrances, is a wheelchair ramp necessary to both?</a></h4>
+		<!--p>No, you can only provide one.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Montreal">#Team Montreal</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">31 Oct 2016</span>
+		<h4><a href="/questions/2016/10/31/montreal-1.html">Must the final design documents be produced in coordination with or reproduced by Chinese design institutes and approved by an authorized auditing centre? </a></h4>
+		<!--p>Yes, all final construction design documents shall go through auditing and get approved, so that your houses can be legally built as permanent in China. The organizing committee would provide assistance for international teams that have difficulties in finding or had no experience in working with Chinese design institutes before....</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Montreal">#Team Montreal</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">24 Oct 2016</span>
+		<h4><a href="/questions/2016/10/24/jia.html">In the Building Code V1.0, values related to wind and snow loads and earthquake-resistant intensity have been crossed out. Would you please give us the correct values for the city of Dezhou?</a></h4>
+		<!--p>Here is the missing information: The wind load for Dezhou shall be taken as 0.45kN/m2, which is the basic wind pressure with the recurrence rate of 50 years (at 10m above the ground, 10-minute average annual maximum wind speed is about 26.86m/s). When it is predicted that the wind velocity...</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team JIA+">#Team JIA+</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">20 Oct 2016</span>
+		<h4><a href="/questions/2016/10/20/thu-4.html">Do we need to equip appliances that are daily necessities but not mentioned in Rules, for instance, electric kettles, induction cookers, etc.</a></h4>
+		<!--p>You can make your own decision for those unlisted appliances. The Rules require only necessary appliances to perform/fulfil tasks. Teams have freedom to consider additional equipment/configurations. Juries will have an overall evaluation.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Design">#Design</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team THU">#Team THU</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">20 Oct 2016</span>
+		<h4><a href="/questions/2016/10/20/thu-3.html">Do we have to determine the location of water supply and drainage on site?</a></h4>
+		<!--p>The position of plumbing and electrical mains is provided by default at the center of the 25m by 25m lot. However, it can be customized and adjusted upon teams’ request. Teams are required to notify the organizing committee in advance, and provide the foundation drawings indicating your desired connection location....</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Site">#Site</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team THU">#Team THU</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">20 Oct 2016</span>
+		<h4><a href="/questions/2016/10/20/thu-2.html">Part of our Design Development can not be completely finished. For instance, the manufacturer, product model of some of our facilities have not been decided. Can we leave these information blank?</a></h4>
+		<!--p>Yes, for the Design Development submission, undetermined information can be left blank. You can mark that, or the Organizing Committee will review your documents and mark the missing information. Please note that all information has to be complete in your final Construction Documentation submission.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Design">#Design</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team THU">#Team THU</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">20 Oct 2016</span>
+		<h4><a href="/questions/2016/10/20/thu-1.html">Does the municipal pipe system provide fire demand, or we need to equip our own fire water tank?</a></h4>
+		<!--p>You have to define your own fire water tank if you need one. The municipal water distribution system will not provide you fire demand because hydraulic pressures are various for each team.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Site">#Site</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team THU">#Team THU</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">19 Oct 2016</span>
+		<h4><a href="/questions/2016/10/19/ssa.html">If we don’t use urban recycled water, rainwater, building reclaimed water, etc., is it possible to use tap water for landscape or greening?</a></h4>
+		<!--p>Yes, it is allowed.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team SSA">#Team SSA</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">14 Oct 2016</span>
+		<h4><a href="/questions/2016/10/14/jia.html">We need the meteo data of Dezhou to design precisely the project.</a></h4>
+		<!--p>Please use weather data of Jinan for your analysis. You may download the weather files from the link below:
+
+https://energyplus.net/weather-location/asia_wmo_region_2/CHN/CHN_Shandong.Jinan.548230_CSWD
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Design">#Design</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team JIA+">#Team JIA+</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">27 Sep 2016</span>
+		<h4><a href="/questions/2016/09/27/shunya.html">Can you please provide the table of contents/what's expected of the Design Development to be submitted on 18th Nov 2016?</a></h4>
+		<!--p>Please refer to RULES V2.0 Appendix D-4 Design Development Documentation Submission for your information. You’ll be well notified if additional contents are required.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Rules">#Rules</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Shunya">#Team Shunya</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">26 Sep 2016</span>
+		<h4><a href="/questions/2016/09/26/toronto-3.html">What are the accessibility requirements for the homes? If we have a 2 storey unit, do we need an elevator?</a></h4>
+		<!--p>There is no requirement or limitation for an elevator. Teams have freedom to consider this issue based on your own design. According to the America Disability Act (ADA), elevators are not required in facilities that are less than three stories or that have less than 3000 square feet per story...</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Toronto">#Team Toronto</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">26 Sep 2016</span>
+		<h4><a href="/questions/2016/09/26/toronto-2.html">Is the concrete pad above grade? If it is, does it count towards the 8.4m solar envelope?</a></h4>
+		<!--p>The concrete pad is even to the ground. The shape and details of the concrete pad need to be provided by teams according to your houses, so that the committee, cooperated with each team, can pre-construct the pad for you. There will be a notice when we need the pad...</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Site">#Site</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Toronto">#Team Toronto</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">26 Sep 2016</span>
+		<h4><a href="/questions/2016/09/26/toronto-1.html">We intend on submitting a request for a house power supply of 240V, 60Hz. And in Canada, we only use single-phase.</a></h4>
+		<!--p>Unfortunately, the power supply of 240V, 60Hz is not allowed in the competition. According to the Building Code, there are two power distribution systems available. Teams can select either one: The three-phase power supply has the voltage of ~220/380V and frequency of 50Hz. The single-phase power supply has the voltage...</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Toronto">#Team Toronto</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">26 Sep 2016</span>
+		<h4><a href="/questions/2016/09/26/scut-polito.html">Are there any limits of the number of trucks that can be parked in the parking area of the construction site?</a></h4>
+		<!--p>Multiple trucks will be in the parking zone. However, only one truck can perform unloading during construction period. After unloading, another truck can take turns.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Site">#Site</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team SCUT-POLITO">#Team SCUT-POLITO</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">21 Sep 2016</span>
+		<h4><a href="/questions/2016/09/21/shunya.html">According to the Building Code are we allowed to use EPS/XPS insulation in the building's exterior walls? If yes are there any limitations we need to know about?</a></h4>
+		<!--p>Yes, EPS/XPS insulation is allowed.
+
+
+  The use of certain materials in building components should meet requirements for fire resistance and combustibility grade.
+  All materials shall not emit any poisonous substance to the indoor or outdoor environment of the building.
+
+
+Please refer to the updated Building Code for detailed information.
+</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Building Code">#Building Code</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team Shunya">#Team Shunya</a>
+</p>
+	</div>
+	
+	<div class="list-group-item">
+		<span class="gray">18 Sep 2016</span>
+		<h4><a href="/questions/2016/09/18/scut-polito.html">Contest 10.2 will restrict the application of PV panel and solar energy. We want to make sure that Contest 10.2 will be the final rule or we need to change our strategy.</a></h4>
+		<!--p>Yes, Contest 10.2 is the final rule. There will be some updates about event schedules (Appendix A-2, A-3) in future, but Section III Contest Criteria will no longer be updated for SDC 2017. We do realize that Contest 10.2 will restrict the variety of PV application. Therefore, we granted only...</p-->
+		<p>
+
+
+<a class="btn btn-xs btn-default" href="/tags/#Rules">#Rules</a>
+
+<a class="btn btn-xs btn-default" href="/tags/#Team SCUT-POLITO">#Team SCUT-POLITO</a>
+</p>
+	</div>
+	
+</div>
+			</div>
+
+			<div class="col-sm-4">
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Solar Decathlon China. All Rights Reserved.
+	<a href="/pages/stats.html"><span class="glyphicon glyphicon-stats"></span></a>
+</footer>
+</body>
+</html>

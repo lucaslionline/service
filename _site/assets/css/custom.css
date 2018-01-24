@@ -9,9 +9,232 @@ body {
 .center {
 	text-align: center;
 }
+ul.no-style {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.img-width {
+	max-width: 100%;
+}
+
+
+
+.margin-bottom-0 {
+	margin-bottom: 0;
+}
+
+.contest,
+.file {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	vertical-align: top;
+}
+.contest:hover,
+.file:hover {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+	text-decoration: none;
+}
+.contest {
+	width: 140px;
+	margin: 10px 35px;
+}
+.file {
+	width: 100px;
+}
+
+
+.juror-img {
+	margin-right: 2em;
+	margin-bottom: 1em;
+}
+
+.version {
+	display: inline-block;
+	text-align: center;
+	margin: 1em;
+}
+.version h3 {
+	margin: 0.2em;
+}
+
+.normal-weight {
+  font-weight: normal;
+}
 
 footer {
 	color: gray;
 	text-align: center;
 	margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+}
+
+svg {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+path {
+	fill: gray;
+}
+a:hover path {
+	fill: #333;
+}
+
+.lispace li {
+	margin-top: 0.5em;
+}
+
+.tag-cloud {
+	margin: 0.25em 0;
+}
+
+
+/* signin
+-------------------------------------------------- */
+.form-signin,
+.form-signup {
+	max-width: 300px;
+	margin: 0 auto;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[name="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[name="password"] {
+  margin-bottom: 0.5em;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+	height: 400px;
+	margin-bottom: 20px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 400px;
+	background-color: #777;
+}
+
+.house {
+	margin-bottom: 0;
+}
+
+
+
+/* contact
+-------------------------------------------------- */
+.contact input, 
+.contact textarea {
+	border: 0;
+	border-bottom: 1px dotted #ccc;
+	color: gray;
+	width: 100%;
+	display: block;
+	margin: 1em 0;
+}
+.contact textarea {
+	height: 12em;
+}
+.contact input:focus,
+.contact textarea:focus {
+	outline: none;
+}
+
+
+/* submission
+-------------------------------------------------- */
+
+.submission li {
+	margin-top: 1em;
+}
+
+
+
+
+.team-logo {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	margin: 8px;
+}
+.team-logo2 {
+	max-width: 250px;
+	max-height: 80px;
+}
+
+
+
+.user-avatar {
+	width: 88px;
+	height: 88px;
+	border-radius: 50%;
+	border: 4px solid white;
+}
+.user-title {
+	margin-bottom: 1em;
+}
+.user-profile img {
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+}
+.user-header {
+	padding-left: 0.5em;
+	width: 100%;
+}
+
+
+
+
+/* countdown -------------------------------------------------- */
+#countdowndiv > div {
+	padding: 10px;
+	border-radius: 3px;
+	background: #d9edf7;
+	display: inline-block;
+	color: #31708f;
+	border: 1px solid #bce8f1;
+	margin-bottom: 3px;
+}
+
+#countdowndiv div > span{
+	padding: 0.7em;
+	border-radius: 3px;
+	background: #afd9ee;
+	display: inline-block;
+	margin-bottom: 0.5em;
+	color: white;
+	font-size: large;
+	font-family: 'Arial Black';
 }

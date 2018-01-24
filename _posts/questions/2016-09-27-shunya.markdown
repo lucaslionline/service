@@ -1,0 +1,10 @@
+---
+layout: question
+title:  "Can you please provide the table of contents/what's expected of the Design Development to be submitted on 18th Nov 2016?"
+category: questions
+tags:
+- Rules
+- Team Shunya
+---
+
+Please refer to RULES V2.0 Appendix D-4 Design Development Documentation Submission for your information. You'll be well notified if additional contents are required.

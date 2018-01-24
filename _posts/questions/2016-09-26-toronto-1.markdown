@@ -1,0 +1,15 @@
+---
+layout: question
+title:  "We intend on submitting a request for a house power supply of 240V, 60Hz. And in Canada, we only use single-phase."
+category: questions
+tag:
+- Building Code
+- Team Toronto
+---
+
+Unfortunately, the power supply of 240V, 60Hz is not allowed in the competition. According to the Building Code, there are two power distribution systems available. Teams can select either one:
+
+1. The three-phase power supply has the voltage of ~220/380V and frequency of 50Hz.
+2. The single-phase power supply has the voltage of ~220V and frequency of 50Hz.
+
+The short-circuit current at the inlet is considered as 6kA. Please accordingly adjust your design to meet this requirement.

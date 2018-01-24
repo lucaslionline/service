@@ -1,0 +1,10 @@
+---
+layout: question
+title:  "Part of our Design Development can not be completely finished. For instance, the manufacturer, product model of some of our facilities have not been decided. Can we leave these information blank?"
+category: questions
+tags:
+- Design
+- Team THU
+---
+
+Yes, for the Design Development submission, undetermined information can be left blank. You can mark that, or the Organizing Committee will review your documents and mark the missing information. Please note that all information has to be complete in your final Construction Documentation submission.

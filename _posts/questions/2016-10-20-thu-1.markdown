@@ -1,0 +1,10 @@
+---
+layout: question
+title:  "Does the municipal pipe system provide fire demand, or we need to equip our own fire water tank?"
+category: questions
+tags:
+- Site
+- Team THU
+---
+
+You have to define your own fire water tank if you need one. The municipal water distribution system will not provide you fire demand because hydraulic pressures are various for each team.

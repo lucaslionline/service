@@ -1,0 +1,10 @@
+---
+layout: question
+title:  "Will water closets be connected to the sewage systems? Can water closets be connected to the principle water supply or must they make use of recycled water?"
+category: questions
+tags:
+- Building Code
+- Team Montreal
+---
+
+Yes, water closets shall be fully functional, and shall be connected to the water supply and sewage systems. It is allowed to connect the water closets to the principle water supply.

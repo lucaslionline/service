@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Q&A"
+---
+
+
+<div class="well">
+	<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+
+		<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/service/pages/sent.html' />
+
+		<p>
+			<textarea name="Question" rows="6" class="form-control" placeholder="Submit a question/request..." required></textarea>
+		</p>
+
+		<button type="submit" class="btn btn-sm btn-primary pull-right">Submit</button>
+
+		<p>
+			From: 
+			<select name="Team">
+				<option>- Teams -</option>
+				{% for team in site.teams %}
+				<option>{{ team.name }}</option>
+				{% endfor %}
+			</select>
+		</p>
+	</form>
+</div>
+
+
+<div class="list-group">
+	{% for post in site.categories.questions %}
+	<div class="list-group-item">
+		<span class="gray">{{ post.date | date_to_string }}</span>
+		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+		<!--p>{{ post.content | strip_html | truncatewords:50 }}</p-->
+		<p>{% include html/post_tags.html %}</p>
+	</div>
+	{% endfor %}
+</div>

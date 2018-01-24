@@ -8,27 +8,469 @@
 	<meta name="description" content="">
 	<title>SDC 2018 | Team Service Center</title>
 	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
 	<!-- Custom css -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+	<!-- ================== Mapbox ==================== -->
+	<script src='/assets/js/mapbox-gl.js'></script>
+	<link href='/assets/css/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 </head>
 
-<body>
-	<div class="container center">
-		<h2>OUT OF SERVICE</h2>
+<body onload="countdown()">
+	<div class="container clearance">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<img class="navbar-brand" src="/assets/img/sdc_logo.png">
+				<a class="navbar-brand" href="/">Team Service Center</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competition <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/competition/calendar.html">Calendar</a></li>
+							<li><a href="/pages/competition/teams.html">Teams</a></li>
+							<li><a href="/pages/competition/juries.html">Juries</a></li>
+							<li><a href="/pages/competition/contests.html">Contests</a></li>
+							<li><a href="/pages/competition/rules.html">Rules</a></li>
+						</ul>
+					</li>
 
-		<p>This site is out of service since December 2017. All contents have been migrated to Solar Decathlon China Official Website.</p>
 
-		<p>Sorry for the inconvenience caused.</p>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshop <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
+							<li><a href="/pages/workshop/first.html">Workshop I</a></li>
+						</ul>
+					</li>
 
-		<br>
-		<p>Please follow Solar Decathlon China Official Website for updates. Thank you!</p>
 
-		<p>
-			🇨🇳 <a href="http://www.sdchina.org.cn/">中文</a> |
-			🇺🇸 <a href="http://www.sdchina.org.cn/en/">English</a>
-		</p>
+					<li class=""><a href="/pages/downloads.html">Downloads</a></li>
+
+
+					<li class=""><a href="/pages/deliverables.html">Deliverables</a></li>
+
+					
+					<li class=""><a href="/pages/questions.html">Q&A</a></li>
+				</ul>
+
+
+				<!--ul class="nav navbar-nav navbar-right">
+					<li><a href="/pages/login.html">Log in</a></li>
+				</ul-->
+			</div>
+		</div>
+	</nav>
+	<!--/.nav-collapse -->
+</header>
+
+		<!-- Carousel
+	================================================== -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
+			<li data-target="#myCarousel" data-slide-to="5"></li>
+			<li data-target="#myCarousel" data-slide-to="6"></li>
+			<li data-target="#myCarousel" data-slide-to="7"></li>
+		</ol>
+
+
+
+		<div class="carousel-inner" role="listbox">
+			<div class="item active" style="background: url(/assets/img/service_center.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Team Service Center</h1>
+						<p>Organizing Committee of Solar Decathlon China</p>
+						<p><a class="btn btn-sm btn-primary" href="mailto:support@sdchina.org.cn">support@sdchina.org.cn</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_1.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Aerial View of the Competition Site</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_2.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Student Cafeteria & Tower</p>
+						<!--p>South Entrance</p-->
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_3.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Greenhouse & Water Recycling Plant</p>
+						<!--p>Central Plaza</p-->
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_4.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Central Plaza & Main Auditorium</p>
+						<!--p>East Entrance</p-->
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_5.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Cafeteria Courtyard</p>
+						<!--p>West Plaza</p-->
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_6.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Service Corridor</p>
+						<!--p>Northwest Corner</p-->
+					</div>
+				</div>
+			</div>
+
+			<div class="item" style="background: url(/assets/img/competition_site/img_7.jpg) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<p>Office Courtyard</p>
+						<!--p>South Plaza</p-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
+<!-- /.carousel -->
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-bullhorn"></span> Announcements</h3>
+					</div>
+
+
+					<div class="list-group">
+						
+						<div class="list-group-item">
+							<span class="gray small">16 Sep 2017</span>
+							<h4><a href="/announcements/2017/09/16/deliverable-report-phase-i-ii.html">Deliverable Report (Phase I & II)</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">07 Aug 2017</span>
+							<h4><a href="/announcements/2017/08/07/request-for-teams-sponsor-information.html">Request for Teams' Sponsor Information</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">06 Jun 2017</span>
+							<h4><a href="/announcements/2017/06/06/call-for-nomination.html">Call for Jury Committee Nominations</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">23 Mar 2017</span>
+							<h4><a href="/announcements/2017/03/23/regulations-on-soil-disturbance.html">Regulations on Soil Disturbance</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">29 Dec 2016</span>
+							<h4><a href="/announcements/2016/12/29/postponement.html">Notification of Postponement</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">07 Nov 2016</span>
+							<h4><a href="/announcements/2016/11/07/notice-2nd-workshop.html">Notice for the Second SDC 2017 Technical Training Workshop</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">04 Nov 2016</span>
+							<h4><a href="/announcements/2016/11/04/building-code-v2-0-released.html">Building Code V2.0 Released</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">19 Oct 2016</span>
+							<h4><a href="/announcements/2016/10/19/rules-v2-0-errata.html">RULES V2.0 Errata</a></h4>
+						</div>
+						
+						<div class="list-group-item">
+							<span class="gray small">13 Sep 2016</span>
+							<h4><a href="/announcements/2016/09/13/rules-v2-0-released.html">RULES V2.0 Released</a></h4>
+						</div>
+						
+					</div>
+
+					<div class="panel-footer">
+						<a class="btn btn-default btn-xs" href="/pages/announcements.html">View all &raquo;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-sm-4">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#news" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-bell"></span> News</a></li>
+
+					<li><a href="#enquiry" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span> Enquiry</a></li>
+
+					<li><a href="#contact" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+				</ul>
+
+
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade active in" id="news">
+						<br>
+						<div class="panel panel-default">
+	<div class="list-group">
+		<div class="list-group-item">
+			<p id="today" class="small gray"></p>
+
+<div id="countdowndiv" class="center">
+	<div>
+		<span class="days" id="day"></span>
+		<div class="small">Days</div>
+	</div>
+	<div>
+		<span class="hours" id="hour"></span>
+		<div class="small">Hours</div>
+	</div>
+	<div>
+		<span class="minutes" id="minute"></span>
+		<div class="small">Minutes</div>
+	</div>
+	<div>
+		<span class="seconds" id="second"></span>
+		<div class="small">Seconds</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+function countdown () {
+	Today = new Date();
+	var NowHour = Today.getHours();
+	var NowMinute = Today.getMinutes();
+	var NowMonth = Today.getMonth();
+	var NowDate = Today.getDate();
+	var NowYear = Today.getYear();
+	var NowSecond = Today.getSeconds();
+
+	Monthleft = 11 - NowMonth;	
+	Secondleft = 59 - NowSecond;
+	Minuteleft = 59 - NowMinute;
+	Hourleft = 23 - NowHour;
+
+// Current calculation is based on the assumption that 02 Aug 2018 is the opening ceremony date.
+switch (NowMonth) {
+	case 0:
+	Dateleft = 31 - NowDate + 181 + 1;
+	break;
+
+	case 1:
+	Dateleft = 28 - NowDate + 153 + 1;
+	break;
+
+	case 2:
+	Dateleft = 31 - NowDate + 122 + 1;
+	break;
+
+	case 3:
+	Dateleft = 30 - NowDate + 92 + 1;
+	break;
+
+	case 4:
+	Dateleft = 31 - NowDate + 61 + 1;
+	break;
+
+	case 5:
+	Dateleft = 30 - NowDate + 31 + 1;
+	break;
+
+	case 6:
+	Dateleft = 31 - NowDate + 1;
+	break;
+
+	case 7:
+	Dateleft = 31 - NowDate + 334 + 1;
+	break;
+
+	case 8:
+	Dateleft = 30 - NowDate + 304 + 1;
+	break;
+
+	case 9:
+	Dateleft = 31 - NowDate + 273 + 1;
+	break;
+
+	case 10:
+	Dateleft = 30 - NowDate + 243 + 1;
+	break;
+
+	case 11:
+	Dateleft = 31 - NowDate + 212 + 1;
+	break;
+}
+
+
+document.getElementById("today").innerHTML = Today.toLocaleDateString() + ' Countdown to Solar Decathlon China 2018';
+document.getElementById("day").innerHTML = Dateleft;
+document.getElementById("hour").innerHTML = Hourleft;
+document.getElementById("minute").innerHTML = Minuteleft;
+document.getElementById("second").innerHTML = Secondleft;
+
+setTimeout("countdown()",1000);
+}
+</script>
+		</div>
+
+		
+		<div class="list-group-item">
+			<p class="gray small">26 Aug 2017</p>
+			<p><p><a href="/pages/teams/mon.html">Team Montreal</a>’s <em>Deep-Performance Dwelling</em> has been erecting up on the campus of McGill University! It seems that they are running ahead of most teams to win time for international shipping and contest preparation. Great job!</p>
+
+<p><img class="img-width" src="/assets/img/news/img_4.png" /></p>
+</p>
+		</div>
+		
+		<div class="list-group-item">
+			<p class="gray small">08 Aug 2017</p>
+			<p><p><a href="/pages/teams/shu.html">Team Shunya</a> (India) released its group photo! This ambitious troop from South Asia has made brilliant achievements in previous SD, and has been doing fabulously so far campaigning for Solar Decathlon China 2018! One more year to go! Let’s rock it!</p>
+
+<p><img class="img-width" src="/assets/img/news/img_1.png" /></p>
+</p>
+		</div>
+		
+		<div class="list-group-item">
+			<p class="gray small">02 Aug 2017</p>
+			<p><div class="alert alert-warning center">
+	<h4>1 Year Countdown</h4>
+	<h3>Solar Decathlon China</h3>
+	Dezhou 2018
+</div>
+</p>
+		</div>
+		
+	</div>
+
+	<div class="panel-footer">
+		<a class="btn btn-default btn-xs" href="/pages/news.html">View all &raquo;</a>
+	</div>
+</div>
+					</div>
+
+					<div class="tab-pane fade" id="enquiry">
+						<br>
+						<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+
+	<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/service/pages/sent.html' />
+
+	<p>
+		<input type="text" name="Name" class="form-control" placeholder="Your Name" required>
+	</p>
+
+	<p>
+		<input type="email" name="Email" class="form-control" placeholder="Your Email" required>
+	</p>
+
+	<p>
+		<input type="text" name="Subject" class="form-control" placeholder="Enquiry Subject" required>
+	</p>
+
+	<p>
+		<textarea name="Message" rows="5" class="form-control" placeholder="Message"></textarea>
+	</p>
+
+	<p class="small gray">Your message will be delivered to the Competition Manager.</p>
+
+	<button type="submit" class="btn btn-sm btn-primary btn-block">Send</button>
+</form>
+
+					</div>
+
+					<div class="tab-pane fade" id="contact">
+						<br>
+						<p class="center">
+	<a class="btn btn-sm btn-primary btn-block" href="mailto:support@sdchina.org.cn"><span class="glyphicon glyphicon-inbox"></span> support@sdchina.org.cn</a>
+</p>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<span class="glyphicon glyphicon-earphone"></span> +86 10 590 07012<br>
+		<span class="glyphicon glyphicon-print"></span> +86 10 590 07013<br>
+		<span class="glyphicon glyphicon-globe"></span> <a href="http://www.sdchina.org.cn" target="_blank">http://www.sdchina.org.cn</a><br>
+		<span class="glyphicon glyphicon-map-marker"></span> 814, Tower B, Xincheng Commercial Building, No. 11 Chongwai Avenue, Dongcheng District, Beijing, 100062
+	</div>
+</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Solar Decathlon China. All Rights Reserved.
+	<a href="/pages/stats.html"><span class="glyphicon glyphicon-stats"></span></a>
+</footer>
 </body>
 </html>

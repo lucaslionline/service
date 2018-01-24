@@ -1,0 +1,19 @@
+---
+layout: jury
+title: "Liu Yang"
+img: liu_yang
+category: juries
+group: Engineering
+nominator: "Team XAUAT"
+---
+
+
+### Liu YANG
+
+<p>
+	<i>Professor, School of Architecture, Xi’an University of Architecture and Technology</i><br>
+	<i>Director, Architecture Technology Research Institute</i><br>
+	<i>Director, Green Building Research Center</i>
+</p>
+
+Prof. Liu Yang, female, doctoral supervisor, is currently the director of Architecture Technology Research Institute in XAUAT. She was awarded “Chang Jiang Scholars” and the Science & Technology Award for Chinese Youth and given the National Science Fund for Distinguished Young Scholars. She has conducted in-depth research on green building as well as building climatology, and achieved innovation in the areas of bioclimatic techniques, adaptive thermal comfort and passive design strategies. Over the last 20 years, Prof. Liu Yang has lead and participated in 20 national scientific research projects. As chief editor or main participating editor she has edited 6 national and local Building Energy Efficiency Codes. She has presented more than 150 papers in both international and domestic academic journals. The 12 awards above provincial level she has obtained from 2004 including 1 the second prize of national scientific and technological progress award (ranking 2).

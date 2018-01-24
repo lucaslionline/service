@@ -1,0 +1,18 @@
+---
+layout: contest
+title: "10. Energy"
+category: contests
+icon: energy
+---
+
+__10-1. Energy Balance__ (80 points)
+
+All available points are earned at the conclusion of the specified energy performance period for a net electrical energy balance of at least `0 kWh`. A positive net electrical energy balance indicates net production; a negative net electrical energy balance indicates net consumption. Reduced points are earned for a net electrical energy balance between -50 kWh and 0 kWh. Reduced points are scaled linearly.
+
+<img class="img-width" src="{{ site.baseurl }}/assets/img/con_11.png">
+
+__10-2. Generating Capacity__ (20 points)
+
+Generating capacity will be determined at the conclusion of the specified energy performance period by calculating the measured energy production per unit PV area (kWh/m2). All available points are earned by the team that has the highest generating capacity. Other teams will be scored proportionally.
+
+<img class="img-width" src="{{ site.baseurl }}/assets/img/con_12.png">

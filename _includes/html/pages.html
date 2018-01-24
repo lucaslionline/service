@@ -1,0 +1,34 @@
+{% if page.categories %}
+{% assign category = page.categories[0] %}
+{% assign posts = site.categories[category] %}
+
+{% for post in posts %}
+{% if post.url == page.url %}
+{% assign post_index0 = forloop.index0 %}
+{% assign post_index1 = forloop.index %}
+{% endif %}
+{% endfor %}
+
+{% for post in posts %}
+{% if post_index0 == forloop.index %}
+{% assign next_post = post %}
+{% endif %}
+{% if post_index1 == forloop.index0 %}
+{% assign prev_post = post %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+
+{% if next_post %}
+<a class="btn btn-xs btn-default" href="{{ site.baseurl }}{{ next_post.url }}" class="prev">‹ Previous</a>
+{% else %}
+<span class="btn btn-xs btn-default disabled">‹ Prev</span>
+{% endif %}
+
+{% if prev_post %}
+<a class="btn btn-xs btn-default pull-right" href="{{ site.baseurl }}{{ prev_post.url }}" class="next">Next ›</a>
+{% else %}
+<span class="btn btn-xs btn-default disabled pull-right">Next ›</span>
+{% endif %}

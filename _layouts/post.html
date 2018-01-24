@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+	<div class="container">
+		{% include header.html %}
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<span class="gray pull-right">{{ page.date | date_to_string }}</span>
+				<h3 class="panel-title">{{ page.title }}</h3>
+			</div>
+
+			<div class="panel-body">
+				{{ content }}
+			</div>
+
+			<div class="panel-footer">
+				{% include html/pages.html %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+{% include footer.html %}
+</body>
+</html>

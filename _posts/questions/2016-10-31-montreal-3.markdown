@@ -1,0 +1,10 @@
+---
+layout: question
+title:  "Are indoor fire hose reels or portable fire hoses necessary if fire extinguishers are provided?"
+category: questions
+tags:
+- Building Code
+- Team Montreal
+---
+
+No, you can equip with either one.

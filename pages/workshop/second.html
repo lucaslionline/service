@@ -1,0 +1,46 @@
+---
+layout: wide
+title: "Workshop II"
+---
+
+<div class="panel panel-default">
+	<div class="panel-body center">
+		<h3><span class="glyphicon glyphicon-info-sign"></span> {{ page.title }}</h3>
+		<hr>
+
+		<p>
+			<span class="glyphicon glyphicon-time"></span> Jan 13<sup>th</sup> - 15<sup>th</sup>, 2017 &nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> Dezhou, SD
+		</p>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#agenda" data-toggle="tab" aria-expanded="false">Agenda</a></li>
+
+			<li><a href="#talk" data-toggle="tab" aria-expanded="false">SDC Talk</a></li>
+
+			<li><a href="#material" data-toggle="tab" aria-expanded="false">Training Materials</a></li>
+		</ul>
+
+
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="agenda">
+				<br>
+				{% include html/agenda2.html %}
+			</div>
+
+			<div class="tab-pane fade" id="talk">
+				<br>
+				{% include html/talk.html %}
+			</div>
+
+			<div class="tab-pane fade" id="material">
+				<br>
+				{% include html/resource2.html %}
+			</div>
+		</div>
+	</div>
+</div>

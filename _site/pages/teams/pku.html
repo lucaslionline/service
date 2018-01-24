@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<title>SDC 2018 | Team PKU</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+	<!-- ================== Mapbox ==================== -->
+	<script src='/assets/js/mapbox-gl.js'></script>
+	<link href='/assets/css/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<img class="navbar-brand" src="/assets/img/sdc_logo.png">
+				<a class="navbar-brand" href="/">Team Service Center</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competition <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/competition/calendar.html">Calendar</a></li>
+							<li><a href="/pages/competition/teams.html">Teams</a></li>
+							<li><a href="/pages/competition/juries.html">Juries</a></li>
+							<li><a href="/pages/competition/contests.html">Contests</a></li>
+							<li><a href="/pages/competition/rules.html">Rules</a></li>
+						</ul>
+					</li>
+
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshop <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
+							<li><a href="/pages/workshop/first.html">Workshop I</a></li>
+						</ul>
+					</li>
+
+
+					<li class=""><a href="/pages/downloads.html">Downloads</a></li>
+
+
+					<li class=""><a href="/pages/deliverables.html">Deliverables</a></li>
+
+					
+					<li class=""><a href="/pages/questions.html">Q&A</a></li>
+				</ul>
+
+
+				<!--ul class="nav navbar-nav navbar-right">
+					<li><a href="/pages/login.html">Log in</a></li>
+				</ul-->
+			</div>
+		</div>
+	</nav>
+	<!--/.nav-collapse -->
+</header>
+
+
+		
+		<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="/pages/competition/teams.html">Teams</a> &raquo; Team PKU
+		<!--select class="pull-right" onchange="self.location.href=options[selectedIndex].value">
+			<option>- Teams -</option>
+			
+			<option value="/pages/teams/hku.html">1 Team HKU</option>
+			
+			<option value="/pages/teams/pku.html">2 Team PKU</option>
+			
+			<option value="/pages/teams/thu.html">3 Team THU</option>
+			
+			<option value="/pages/teams/xjt.html">4 Team XJTU-WNEU</option>
+			
+			<option value="/pages/teams/yi.html">5 Team YI</option>
+			
+			<option value="/pages/teams/njf.html">6 Team NJFJ</option>
+			
+			<option value="/pages/teams/ist.html">7 Team Istanbul</option>
+			
+			<option value="/pages/teams/sue.html">8 Team SUES-XD</option>
+			
+			<option value="/pages/teams/shu.html">9 Team Shunya</option>
+			
+			<option value="/pages/teams/mon.html">10 Team Montreal</option>
+			
+			<option value="/pages/teams/jia.html">11 Team JIA+</option>
+			
+			<option value="/pages/teams/pur.html">12 Team Purdue</option>
+			
+			<option value="/pages/teams/seu.html">13 Team SEU-TUBS</option>
+			
+			<option value="/pages/teams/xau.html">14 Team XAUAT</option>
+			
+			<option value="/pages/teams/sjt.html">15 Team SJTUIUC</option>
+			
+			<option value="/pages/teams/bjt.html">16 Team BJTU</option>
+			
+			<option value="/pages/teams/sie.html">17 Team SIE</option>
+			
+			<option value="/pages/teams/tju.html">18 Team TJU-TUD</option>
+			
+			<option value="/pages/teams/sol.html">19 Team Solar Offspring</option>
+			
+			<option value="/pages/teams/scu.html">20 Team SCUT-POLITO</option>
+			
+			<option value="/pages/teams/unn.html">21 Team UNNC Alpha</option>
+			
+			<option value="/pages/teams/isr.html">22 Team Israel</option>
+			
+		</select-->
+	</div>
+
+
+	<div id="myCarousel" class="carousel house slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+		</ol>
+
+		<!-- Slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active" style="background: url(/assets/teams/pku/dd_1.png) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>SHU</h1>
+						<img class="team-logo2" src="/assets/teams/pku/logo.png" alt="logo">
+						<p>Team PKU</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- Nav -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+	<div class="list-group">
+		<div class="list-group-item">
+			
+		</div>
+	</div>
+</div>
+	</div>
+
+
+	<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Solar Decathlon China. All Rights Reserved.
+	<a href="/pages/stats.html"><span class="glyphicon glyphicon-stats"></span></a>
+</footer>
+</body>
+</html>

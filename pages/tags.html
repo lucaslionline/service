@@ -1,0 +1,27 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+<div class="list-group">
+	<div class="list-group-item">
+		{% for tag in site.tags %}
+		<a class="btn btn-xs btn-default tag-cloud" href="#{{ tag | first | slugize }}">#{{ tag | first }}</a>
+		{% endfor %}
+	</div>
+
+
+	{% for tag in site.tags %}
+	<div class="list-group-item">
+		{% capture tag_name %}{{ tag | first }}{% endcapture %}
+		<a name="{{ tag_name | slugize }}"></a>
+		<h4 id="#{{ tag_name | slugize }}">#{{ tag_name }}</h4>
+
+		{% for post in site.tags[tag_name] %}
+		<span class="gray pull-right">{{ post.date | date_to_string }}</span>
+		<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</div>
+	{% endfor %}
+</div>

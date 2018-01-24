@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="6-1. Temperature (40 points)">
+	<title>SDC 2018 | 6. Comfort Zone</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+	<!-- ================== Mapbox ==================== -->
+	<script src='/assets/js/mapbox-gl.js'></script>
+	<link href='/assets/css/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<img class="navbar-brand" src="/assets/img/sdc_logo.png">
+				<a class="navbar-brand" href="/">Team Service Center</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competition <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/competition/calendar.html">Calendar</a></li>
+							<li><a href="/pages/competition/teams.html">Teams</a></li>
+							<li><a href="/pages/competition/juries.html">Juries</a></li>
+							<li><a href="/pages/competition/contests.html">Contests</a></li>
+							<li><a href="/pages/competition/rules.html">Rules</a></li>
+						</ul>
+					</li>
+
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshop <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
+							<li><a href="/pages/workshop/first.html">Workshop I</a></li>
+						</ul>
+					</li>
+
+
+					<li class=""><a href="/pages/downloads.html">Downloads</a></li>
+
+
+					<li class=""><a href="/pages/deliverables.html">Deliverables</a></li>
+
+					
+					<li class=""><a href="/pages/questions.html">Q&A</a></li>
+				</ul>
+
+
+				<!--ul class="nav navbar-nav navbar-right">
+					<li><a href="/pages/login.html">Log in</a></li>
+				</ul-->
+			</div>
+		</div>
+	</nav>
+	<!--/.nav-collapse -->
+</header>
+
+
+		
+		<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="/pages/competition/contests.html">Contests</a> &raquo; 6. Comfort Zone (100 points)
+		<!--select class="pull-right" onchange="self.location.href=options[selectedIndex].value">
+			<option>- Contest Criteria -</option>
+			<hr>
+			
+			<option value="/contests/2016/10/10/architecture.html">1. Architecture</option>
+			
+			<option value="/contests/2016/10/09/market-appeal.html">2. Market Appeal</option>
+			
+			<option value="/contests/2016/10/08/engineering.html">3. Engineering</option>
+			
+			<option value="/contests/2016/10/07/communications.html">4. Communications</option>
+			
+			<option value="/contests/2016/10/06/innovation.html">5. Innovation</option>
+			
+			<option value="/contests/2016/10/05/comfort-zone.html">6. Comfort Zone</option>
+			
+			<option value="/contests/2016/10/04/appliances.html">7. Appliances</option>
+			
+			<option value="/contests/2016/10/03/home-life.html">8. Home Life</option>
+			
+			<option value="/contests/2016/10/02/commuting.html">9. Commuting</option>
+			
+			<option value="/contests/2016/10/01/energy.html">10. Energy</option>
+			
+		</select-->
+	</div>
+
+	<div class="panel-body">
+		<p><strong>6-1. Temperature</strong> (40 points)</p>
+
+<p>All available points are earned at the conclusion of each scored period by keeping the time-averaged interior dry-bulb temperature between <code class="highlighter-rouge">22°C</code> and <code class="highlighter-rouge">25°C</code> during the scored period. Reduced points are earned if the time-averaged interior dry-bulb temperature is between 19°C and 22°C or between 25°C and 28°C. Reduced point values are scaled linearly.</p>
+
+<p><img class="img-width" src="/assets/img/con_1.png" /></p>
+
+<p><strong>6-2. Humidity</strong> (20 points)</p>
+
+<p>All available points are earned at the conclusion of each scored period by keeping the time-averaged interior relative humidity below <code class="highlighter-rouge">60.0%</code> during the scored period. Reduced points are earned if the time-averaged interior relative humidity is between 60.0% and 70.0%. Reduced point values are scaled linearly.</p>
+
+<p><img class="img-width" src="/assets/img/con_2.png" /></p>
+
+<p><strong>6-3. CO2 Level</strong> (20 points)</p>
+
+<p>All available points are earned at the conclusion of each scored period by keeping the time-averaged interior CO2 level below <code class="highlighter-rouge">1000 ppm</code> during the scored period. Reduced points are earned if the time-averaged CO2 level is between 1000 ppm and 2000 ppm. Reduced point values are scaled linearly.</p>
+
+<p><img class="img-width" src="/assets/img/con_3.png" /></p>
+
+<p><strong>6-4. PM2.5 level</strong> (20 points)</p>
+
+<p>All available points are earned at the conclusion of each scored period by keeping the time-averaged interior PM2.5 level below <code class="highlighter-rouge">35 ug/m3</code> during the scored period. Reduced points are earned if the time-averaged PM2.5 level is between 35 ug/m3 and 75 ug/m3. Reduced point values are scaled linearly.</p>
+
+<p><img class="img-width" src="/assets/img/con_4.png" /></p>
+
+	</div>
+
+	<div class="panel-footer">
+		
+
+
+
+
+<a class="btn btn-xs btn-default" href="/contests/2016/10/06/innovation.html" class="prev">‹ Previous</a>
+
+
+
+<a class="btn btn-xs btn-default pull-right" href="/contests/2016/10/04/appliances.html" class="next">Next ›</a>
+
+
+	</div>
+</div>
+	</div>
+
+
+	<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Solar Decathlon China. All Rights Reserved.
+	<a href="/pages/stats.html"><span class="glyphicon glyphicon-stats"></span></a>
+</footer>
+</body>
+</html>

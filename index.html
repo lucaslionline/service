@@ -8,21 +8,66 @@ title: "Team Service Center"
 	{% include head.html %}
 </head>
 
-<body>
-	<div class="container center">
-		<h2>OUT OF SERVICE</h2>
+<body onload="countdown()">
+	<div class="container clearance">
+		{% include header.html %}
+		{% include html/carousel.html %}
 
-		<p>This site is out of service since December 2017. All contents have been migrated to Solar Decathlon China Official Website.</p>
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-bullhorn"></span> Announcements</h3>
+					</div>
 
-		<p>Sorry for the inconvenience caused.</p>
 
-		<br>
-		<p>Please follow Solar Decathlon China Official Website for updates. Thank you!</p>
+					<div class="list-group">
+						{% for post in site.categories.announcements limit:10 %}
+						<div class="list-group-item">
+							<span class="gray small">{{ post.date | date_to_string }}</span>
+							<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+						</div>
+						{% endfor %}
+					</div>
 
-		<p>
-			🇨🇳 <a href="http://www.sdchina.org.cn/">中文</a> |
-			🇺🇸 <a href="http://www.sdchina.org.cn/en/">English</a>
-		</p>
+					<div class="panel-footer">
+						<a class="btn btn-default btn-xs" href="{{ site.baseurl }}/pages/announcements.html">View all &raquo;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-sm-4">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#news" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-bell"></span> News</a></li>
+
+					<li><a href="#enquiry" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span> Enquiry</a></li>
+
+					<li><a href="#contact" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+				</ul>
+
+
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade active in" id="news">
+						<br>
+						{% include widgets/news.html %}
+					</div>
+
+					<div class="tab-pane fade" id="enquiry">
+						<br>
+						{% include widgets/enquiry.html %}
+					</div>
+
+					<div class="tab-pane fade" id="contact">
+						<br>
+						{% include widgets/contact.html %}
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	{% include footer.html %}
 </body>
 </html>

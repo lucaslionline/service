@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<title>SDC 2018 | Team Montreal</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+	<!-- ================== Mapbox ==================== -->
+	<script src='/assets/js/mapbox-gl.js'></script>
+	<link href='/assets/css/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<img class="navbar-brand" src="/assets/img/sdc_logo.png">
+				<a class="navbar-brand" href="/">Team Service Center</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competition <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/competition/calendar.html">Calendar</a></li>
+							<li><a href="/pages/competition/teams.html">Teams</a></li>
+							<li><a href="/pages/competition/juries.html">Juries</a></li>
+							<li><a href="/pages/competition/contests.html">Contests</a></li>
+							<li><a href="/pages/competition/rules.html">Rules</a></li>
+						</ul>
+					</li>
+
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshop <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
+							<li><a href="/pages/workshop/first.html">Workshop I</a></li>
+						</ul>
+					</li>
+
+
+					<li class=""><a href="/pages/downloads.html">Downloads</a></li>
+
+
+					<li class=""><a href="/pages/deliverables.html">Deliverables</a></li>
+
+					
+					<li class=""><a href="/pages/questions.html">Q&A</a></li>
+				</ul>
+
+
+				<!--ul class="nav navbar-nav navbar-right">
+					<li><a href="/pages/login.html">Log in</a></li>
+				</ul-->
+			</div>
+		</div>
+	</nav>
+	<!--/.nav-collapse -->
+</header>
+
+
+		
+		<div class="panel panel-default">
+	<div class="panel-heading">
+		<a href="/pages/competition/teams.html">Teams</a> &raquo; Team Montreal
+		<!--select class="pull-right" onchange="self.location.href=options[selectedIndex].value">
+			<option>- Teams -</option>
+			
+			<option value="/pages/teams/hku.html">1 Team HKU</option>
+			
+			<option value="/pages/teams/pku.html">2 Team PKU</option>
+			
+			<option value="/pages/teams/thu.html">3 Team THU</option>
+			
+			<option value="/pages/teams/xjt.html">4 Team XJTU-WNEU</option>
+			
+			<option value="/pages/teams/yi.html">5 Team YI</option>
+			
+			<option value="/pages/teams/njf.html">6 Team NJFJ</option>
+			
+			<option value="/pages/teams/ist.html">7 Team Istanbul</option>
+			
+			<option value="/pages/teams/sue.html">8 Team SUES-XD</option>
+			
+			<option value="/pages/teams/shu.html">9 Team Shunya</option>
+			
+			<option value="/pages/teams/mon.html">10 Team Montreal</option>
+			
+			<option value="/pages/teams/jia.html">11 Team JIA+</option>
+			
+			<option value="/pages/teams/pur.html">12 Team Purdue</option>
+			
+			<option value="/pages/teams/seu.html">13 Team SEU-TUBS</option>
+			
+			<option value="/pages/teams/xau.html">14 Team XAUAT</option>
+			
+			<option value="/pages/teams/sjt.html">15 Team SJTUIUC</option>
+			
+			<option value="/pages/teams/bjt.html">16 Team BJTU</option>
+			
+			<option value="/pages/teams/sie.html">17 Team SIE</option>
+			
+			<option value="/pages/teams/tju.html">18 Team TJU-TUD</option>
+			
+			<option value="/pages/teams/sol.html">19 Team Solar Offspring</option>
+			
+			<option value="/pages/teams/scu.html">20 Team SCUT-POLITO</option>
+			
+			<option value="/pages/teams/unn.html">21 Team UNNC Alpha</option>
+			
+			<option value="/pages/teams/isr.html">22 Team Israel</option>
+			
+		</select-->
+	</div>
+
+
+	<div id="myCarousel" class="carousel house slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+		</ol>
+
+		<!-- Slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active" style="background: url(/assets/teams/mon/dd_1.png) center center; background-size: cover;">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Deep-Performance Dwelling</h1>
+						<img class="team-logo2" src="/assets/teams/mon/logo.png" alt="logo">
+						<p>Team Montreal</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- Nav -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+	<div class="list-group">
+		<div class="list-group-item">
+			<h4>House Description</h4>
+<p>
+	<a href="javascript:;" onclick="eng()">English</a> | 
+	<a href="javascript:;" onclick="chn()">中文</a>
+</p>
+
+<div id="eng">
+	<p>The Team Montreal design for the 2017 Solar Decathlon China is a high-performance, net-zero energy-capable residence. The Deep-Performance Dwelling (DPD) is conceived as a Net-Zero Energy (NZE) and Low or Zero Carbon (LZC) system-built residential construction that manages its primary resources onsite. It is based on state-of-the-art passive design/construction concepts and techniques combining a superefficient integrated MEP system with active renewable energy systems and advanced interactive monitoring/control systems.</p>
+
+	<p>DPD seeks to radically reimagine and reinvent the way in which we live in cities, an issue of fundamental significance across the world. Cities, as the cultural endeavour par excellence, are the stage upon which our collective future finds full expression as simultaneously the main site of contestation and opportunity to create an alternative and sustainable way of living. The creation and facilitation of a dense, efficient, affordable, vibrant, and collective urban environment is therefore of critical importance. DPD responds to this imperative as a typologically unique design that reconciles culture, technology, and the environment. It seeks to explicitly acknowledge and incorporate the socio-cultural and qualitative dimensions alongside the measurable and quantitative metrics in Sustainable Development and Green Building discourses.</p>
+
+	<p>The innovative flexibility and adaptability of DPD ensures the comfortable accommodation of various family configurations, incorporating outdoor space and ecological landscaping all within only twenty percent of the allotted site. If replicated, this model could easily accommodate thirty residents over the competition site. Within an urban context, this replication could occur over entire blocks, ensuring a high density while maintaining human scale without the setbacks and adjacent open space required of high-rise construction. This adjoining of independent residences in a dense urban situation creates the opportunity for social interaction and a more collective form of living. The central courtyards of each home are open on either side, allowing for shared space and connectivity between neighbours. The street entrances are also closely aligned and a shared backstreet enables sociability and chance encounter, fostering a more cohesive community of residents.</p>
+
+	<p>DPD is designed for a family living in the cold northern climate of Montreal. It has emerged through a marrying of the local Montreal row house typology and the traditional Siheyuan courtyard house common throughout much of China. These different influences have informed a narrow, compact and efficient home flexible in its inhabitation and adaptable to a variety of configurations relevant to a growing modern family.</p>
+</div>
+
+<div id="chn" style="display:none;">
+	<p>蒙特利尔团队针对2017中国国际太阳能十项全能竞赛的设计，是一个高性能，净零能耗的住宅。深性能（DPD）被设定为“净零能耗”（NZE）、低碳或零碳（LZC）和就地运用资源。整体住宅以最新水平的被动式节能设计、建筑理念为基础，同时运用整合主动再生能源和先进互动监控的超高效MEP系统。</p>
+
+	<p>DPD寻求从根本上重新想象和创新城市生活方式。城市，作为最卓越的文化尝试，是我们共同的未来实现其最极致表现和创造可交替、可持续发展生活方式的主要舞台。因此，紧致、高效、可负担、充满生气、集体的城市环境的创造和促进是决定性的重要因素。DPD从类型上用独特的设计，通过和谐文化、科技和环境，来回应这个必要因素；并且明确地肯定和一体化可持续发展和绿色建筑理论，内容包括社交文化、定性维度和定量指标。</p>
+
+	<p>仅仅占地20% （比赛提供场地），DPD不仅用其在灵活度和适应度上的创新确保给予不同家庭组合舒适的室内膳宿空间，并且提供了多元的室外活动区域和生态景观。若占地100%，DPD排状的住宅楼设计可轻松被复制为住宅区并提供宽敞住宿给30个居民。在布局紧凑的城市，此类毗连的独排住宅楼给社交互动和社区生活创造了机会。住宅楼各家共享中部庭院，这种互通在邻里之间建立了联系。位于街道上的住宅入口也互相临近，以此建立一个共享的后街区域，这种布局孕育了一个更加紧密的居民社区。</p>
+
+	<p>DPD是为了在蒙特利尔的寒冷北方气候中生活的家庭而设计的住宅。此设计联姻了蒙特利尔当地的连排住宅楼和中国传统的四合院类带庭院住宅。两种不同的房屋类型的组合创作了一种精密、紧凑和高效的住宅灵活性，以此适应不同的现代家庭组合结构。</p>
+</div>
+		</div>
+	</div>
+</div>
+	</div>
+
+
+	<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Solar Decathlon China. All Rights Reserved.
+	<a href="/pages/stats.html"><span class="glyphicon glyphicon-stats"></span></a>
+</footer>
+</body>
+</html>
