@@ -15,7 +15,7 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="dropdown">
+					<!--li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Competition <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="/pages/competition/calendar.html">Calendar</a></li>
@@ -33,7 +33,10 @@
 							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
 							<li><a href="/pages/workshop/first.html">Workshop I</a></li>
 						</ul>
-					</li>
+					</li-->
+
+
+					<li class="{% if page.url contains 'announcements' %}active{% endif %}"><a href="/pages/announcements.html">Announcements</a></li>
 
 
 					<li class="{% if page.url contains 'downloads' %}active{% endif %}"><a href="/pages/downloads.html">Downloads</a></li>

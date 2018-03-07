@@ -13,20 +13,21 @@ title: "Team Service Center"
 		{% include header.html %}
 		{% include html/carousel.html %}
 
+
 		<div class="row">
-			<div class="col-sm-8">
+			<!-- ============ Announcements ============= -->
+			<div class="col-xs-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title"><span class="glyphicon glyphicon-bullhorn"></span> Announcements</h3>
 					</div>
 
-
 					<div class="list-group">
-						{% for post in site.categories.announcements limit:10 %}
-						<div class="list-group-item">
-							<span class="gray small">{{ post.date | date_to_string }}</span>
-							<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-						</div>
+						{% for post in site.categories.announcements limit:5 %}
+						<a href="{{ post.url }}" class="list-group-item">
+							<span class="gray small">[ {{ post.date | date_to_string }} ]</span>
+							{{ post.title }}
+						</a>
 						{% endfor %}
 					</div>
 
@@ -38,9 +39,33 @@ title: "Team Service Center"
 
 
 
+
+			<!-- ============ Documents ============= -->
+			<div class="col-xs-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-file"></span> Documents</h3>
+					</div>
+
+					<div class="list-group">
+						<a href="#" class="list-group-item">Solar Decathlon China Rules V2.2</a>
+						<a href="#" class="list-group-item">Solar Decathlon China Building Code V2.2</a>
+						<a href="#" class="list-group-item">Solar Decathlon China Building Logo</a>
+					</div>
+
+					<div class="panel-footer">
+						<a class="btn btn-default btn-xs" href="/pages/downloads.html">View all &raquo;</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- ============ Deliverables ============= -->
 			<div class="col-sm-4">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#news" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-bell"></span> News</a></li>
+					<li class="active"><a href="#news" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-time"></span> Countdown</a></li>
 
 					<li><a href="#enquiry" data-toggle="tab" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span> Enquiry</a></li>
 
@@ -51,7 +76,11 @@ title: "Team Service Center"
 				<div id="myTabContent" class="tab-content">
 					<div class="tab-pane fade active in" id="news">
 						<br>
-						{% include widgets/news.html %}
+						<div class="panel panel-default">
+							<div class="panel-body">
+								{% include widgets/countdown.html %}
+							</div>
+						</div>
 					</div>
 
 					<div class="tab-pane fade" id="enquiry">
@@ -66,6 +95,10 @@ title: "Team Service Center"
 				</div>
 			</div>
 		</div>
+
+
+		{% include widgets/map.html %}
+
 	</div>
 
 	{% include footer.html %}
