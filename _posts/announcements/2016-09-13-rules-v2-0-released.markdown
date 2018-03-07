@@ -6,8 +6,8 @@ category: announcements
 
 #### Download
 
-<a class="btn btn-xs btn-primary" href="{{ site.baseurl }}/assets/doc/SDC2017_Rules_V2.0.pdf" target="_blank">Rules V2.0</a>
-<a class="btn btn-xs btn-primary" href="{{ site.baseurl }}/assets/doc/SDC2017_Rules_Updates.pdf" target="_blank">Rules Updates</a>
+<a class="btn btn-xs btn-primary" href="/assets/doc/SDC2017_Rules_V2.0.pdf" target="_blank">Rules V2.0</a>
+<a class="btn btn-xs btn-primary" href="/assets/doc/SDC2017_Rules_Updates.pdf" target="_blank">Rules Updates</a>
 
 ---
 

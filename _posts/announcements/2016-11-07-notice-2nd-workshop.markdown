@@ -98,11 +98,11 @@ Each team will be introducing your house model to the audience and media in 3 to
 ---
 
 <a name="file"></a>
-<a class="file" href="{{ site.baseurl }}/assets/doc/2016-11-07-appendix-1.xlsx" target="_blank">
-	<img src="{{ site.baseurl }}/assets/img/xlsx_64.png"><br>
+<a class="file" href="/assets/doc/2016-11-07-appendix-1.xlsx" target="_blank">
+	<img src="/assets/img/xlsx_64.png"><br>
 	Appendix 1
 </a>
-<a class="file" href="{{ site.baseurl }}/assets/doc/2016-11-07-appendix-2.docx" target="_blank">
-	<img src="{{ site.baseurl }}/assets/img/docx_64.png"><br>
+<a class="file" href="/assets/doc/2016-11-07-appendix-2.docx" target="_blank">
+	<img src="/assets/img/docx_64.png"><br>
 	Appendix 2
 </a>

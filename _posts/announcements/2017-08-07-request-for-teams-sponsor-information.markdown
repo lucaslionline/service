@@ -17,10 +17,10 @@ Organizing Committee
 ---
 
 <a name="super-tent"></a>
-<img class="img-width" src="{{ site.baseurl }}/assets/img/news/img_2.png">
+<img class="img-width" src="/assets/img/news/img_2.png">
 
 <a name="file"></a>
-<a class="file" href="{{ site.baseurl }}/assets/doc/Team_Sponsor_Directory.xlsx" target="_blank">
-	<img src="{{ site.baseurl }}/assets/img/xlsx_64.png"><br>
+<a class="file" href="/assets/doc/Team_Sponsor_Directory.xlsx" target="_blank">
+	<img src="/assets/img/xlsx_64.png"><br>
 	Team Sponsor Directory
 </a>

@@ -34,13 +34,13 @@ Organizing Committee
 
 <a name="file"></a>
 
-<a class="file" href="{{ site.baseurl }}/assets/doc/Deliverable_Status_Sheet_20170915.pdf" target="_blank">
-	<img src="{{ site.baseurl }}/assets/img/pdf_64.png"><br>
+<a class="file" href="/assets/doc/Deliverable_Status_Sheet_20170915.pdf" target="_blank">
+	<img src="/assets/img/pdf_64.png"><br>
 	Deliverable Status Sheet 20170915
-</a> <a class="file" href="{{ site.baseurl }}/assets/doc/Rules_Reference_20170826.pdf" target="_blank">
-	<img src="{{ site.baseurl }}/assets/img/pdf_64.png"><br>
+</a> <a class="file" href="/assets/doc/Rules_Reference_20170826.pdf" target="_blank">
+	<img src="/assets/img/pdf_64.png"><br>
 	Rules Reference 20170826
-</a> <a class="file" href="{{ site.baseurl }}/assets/doc/Sample_TEAM_Estimate.xlsx" target="_blank">
-	<img src="{{ site.baseurl }}/assets/img/xlsx_64.png"><br>
+</a> <a class="file" href="/assets/doc/Sample_TEAM_Estimate.xlsx" target="_blank">
+	<img src="/assets/img/xlsx_64.png"><br>
 	Sample TEAM Estimate
 </a>
