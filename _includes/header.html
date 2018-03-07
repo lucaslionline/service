@@ -45,13 +45,18 @@
 					<li class="{% if page.url contains 'deliverables' %}active{% endif %}"><a href="/pages/deliverables.html">Deliverables</a></li>
 
 					
-					<li class="{% if page.url contains 'questions' %}active{% endif %}"><a href="/pages/questions.html">Q&A</a></li>
+					<li class="{% if page.url contains 'questions' %}active{% endif %}"><a href="/pages/questions.html">Q&A</a></li>					
 				</ul>
 
 
-				<!--ul class="nav navbar-nav navbar-right">
-					<li><a href="/pages/login.html">Log in</a></li>
-				</ul-->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-bell"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/pages/workshop/second.html">Workshop II</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</nav>
