@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Announcements"
+---
+
+
+<div class="panel panel-default">
+	<div class="panel-body center">
+		<h3><span class="glyphicon glyphicon-bullhorn"></span> {{ page.title }}</h3>
+		<hr>
+
+		<p>This page lists important announcements concerning the milestone of the Solar Decathlon China 2018 event. Other timely notices will be delivered through emails.</p>
+	</div>
+</div>
+
+
+
+<div class="list-group">
+	{% for post in paginator.posts %}
+	<a class="list-group-item" href="{{ post.url }}">
+		<span class="gray small">[ {{ post.date | date_to_string }} ]</span>
+		{{ post.title }}
+	</a>
+	{% endfor %}
+
+
+	<!--==== paginator ====-->
+	{% if paginator.total_pages > 1 %}
+	<div class="list-group-item">
+		{% if paginator.previous_page %}
+		<a class="btn btn-xs btn-default" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">‹ Prev</a>
+		{% else %}
+		<span class="btn btn-xs btn-default disabled">‹ Prev</span>
+		{% endif %}
+
+		{% for page in (1..paginator.total_pages) %}
+		{% if page == paginator.page %}
+		<span class="btn btn-xs btn-default disabled">{{ page }}</span>
+		{% elsif page == 1 %}
+		<a class="btn btn-xs btn-default" href="/announcements/">{{ page }}</a>
+		{% else %}
+		<a class="btn btn-xs btn-default" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+		{% endif %}
+		{% endfor %}
+
+		{% if paginator.next_page %}
+		<a class="btn btn-xs btn-default pull-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next ›</a>
+		{% else %}
+		<span class="btn btn-xs btn-default disabled pull-right">Next ›</span>
+		{% endif %}
+	</div>
+	{% endif %}
+</div>

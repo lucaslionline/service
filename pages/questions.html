@@ -1,5 +1,5 @@
 ---
-layout: wide
+layout: default
 title: "Q & A"
 ---
 
@@ -14,8 +14,20 @@ title: "Q & A"
 </div>
 
 
-<div class="panel panel-default">
-	<div class="panel-body">
-		{% include html/comments.html %}
+<div class="row">
+	<div class="col-sm-8">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include html/comments.html %}
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-4">
+		<div class="well">
+			<p class="gray"><span class="glyphicon glyphicon-comment"></span> Quick Enquiry</p>
+			{% include widgets/enquiry.html %}
+		</div>
 	</div>
 </div>
+

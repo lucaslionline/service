@@ -23,16 +23,16 @@ title: "Team Service Center"
 					</div>
 
 					<div class="list-group">
-						{% for post in site.categories.announcements limit:5 %}
+						{% for post in site.posts limit:5 %}
 						<a href="{{ post.url }}" class="list-group-item">
 							<span class="gray small">[ {{ post.date | date_to_string }} ]</span>
 							{{ post.title }}
 						</a>
 						{% endfor %}
-					</div>
 
-					<div class="panel-footer">
-						<a class="btn btn-default btn-xs" href="/pages/announcements.html">View all &raquo;</a>
+						<div class="list-group-item">
+							<a class="btn btn-default btn-xs" href="/announcements/index.html">View all &raquo;</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -51,10 +51,10 @@ title: "Team Service Center"
 						<a href="/assets/doc/SDC2018_Rules_V2.2.pdf" target="_blank" class="list-group-item">Solar Decathlon China Rules V2.2</a>
 						<a href="/assets/doc/SDC2018_Building_Code_V2.2.pdf" target="_blank" class="list-group-item">Solar Decathlon China Building Code V2.2</a>
 						<a href="/assets/doc/sdc_logo.ai" target="_blank" class="list-group-item">Solar Decathlon China Logo</a>
-					</div>
 
-					<div class="panel-footer">
-						<a class="btn btn-default btn-xs" href="/pages/downloads.html">View all &raquo;</a>
+						<div class="list-group-item">
+							<a class="btn btn-default btn-xs" href="/pages/downloads.html">View all &raquo;</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -85,7 +85,9 @@ title: "Team Service Center"
 
 					<div class="tab-pane fade" id="enquiry">
 						<br>
-						{% include widgets/enquiry.html %}
+						<div class="well">
+							{% include widgets/enquiry.html %}
+						</div>
 					</div>
 
 					<div class="tab-pane fade" id="contact">

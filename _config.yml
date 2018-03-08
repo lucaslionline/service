@@ -1,35 +1,6 @@
 title: Team Service Center
-baseurl: /service
+baseurl: 
 markdown: kramdown
-# gems: [jekyll-paginate]
-# paginate: 5
-# paginate_path: "questions/page:num"
-
-
-#--------------------------------
-# Teams
-
-teams:
-- {num: 1, name: Team HKU, abr: hku, title: S(L)OW House}
-- {num: 2, name: Team PKU, abr: pku, title: SHU}
-- {num: 3, name: Team THU, abr: thu, title: WHAO House}
-- {num: 4, name: Team XJTU-WNEU, abr: xjt, title: Xi'an Mass}
-- {num: 5, name: Team YI, abr: yi, title: YI}
-- {num: 6, name: Team NJFJ, abr: njf, title: DOTTIE}
-- {num: 7, name: Team Istanbul, abr: ist, title: ALGAETECH House}
-- {num: 8, name: Team SUES-XD, abr: sue, title: Dancing Sunlight}
-- {num: 9, name: Team Shunya, abr: shu, title: Project Solarise}
-- {num: 10, name: Team Montreal, abr: mon, title: Deep-Performance Dwelling}
-- {num: 11, name: Team JIA+, abr: jia, title: JIA+ }
-- {num: 12, name: Team Purdue, abr: pur, title: HI-TECH}
-- {num: 13, name: Team SEU-TUBS, abr: seu, title: SEU-TUBS}
-- {num: 14, name: Team XAUAT, abr: xau, title: Qiju 2.0}
-- {num: 15, name: Team SJTUIUC, abr: sjt, title: SJTUIUC}
-- {num: 16, name: Team BJTU, abr: bjt, title: i-Yard 2.0}
-- {num: 17, name: Team SIE, abr: sie, title: Smart Nest}
-- {num: 18, name: Team TJU-TUD, abr: tju, title: Solar House}
-- {num: 19, name: Team Solar Offspring, abr: sol, title: R. E. A. L House}
-- {num: 20, name: Team SCUT-POLITO, abr: scu, title: SCUT-POLITO}
-- {num: 21, name: Team UNNC Alpha, abr: unn, title: Duo Pension House}
-- {num: 22, name: Team Israel, abr: isr, title: The Cactus Home}
-
+plugins: [jekyll-paginate]
+paginate: 20
+paginate_path: "/announcements/page:num/"
